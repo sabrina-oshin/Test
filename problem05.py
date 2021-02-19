@@ -1,6 +1,4 @@
 # problem05:
-# The first line contains the integer n, the number of student's records
-# The next  lines contain the names and marks obtained by a student, each value separated by a space
-# The final line contains query_name, the name of a student to query
-# Print the average of the marks array for the student name provided, showing 2 places after the decimal
+# Given the participant's score sheet for your University Sports Day, you are required to find the runner-up score
+# You are given  scores. Store them in a list and find the score of the runner-up.
 # The code starts here:

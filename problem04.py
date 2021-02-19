@@ -4,3 +4,7 @@
 # Note that....represents the consecutive values in between.
 # The code starts here:
 
+i=1
+n = int (input())
+for i in range (1,n+1):
+ print (i, end ='')

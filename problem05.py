@@ -4,14 +4,15 @@
 # The code starts here:
 
 # Taking the array input
-import numpy as np 
-n = int(input())
+n = int (input())
 A = list ()
+
+# Appending the input values to the list 
 for i in range(n):
  x = input ()
  A.append(x)  
- 
-#Sorting the input array to find out the second best and print out the second best
-sortedlist = sorted(A)
-print (sortedlist [n-2])
 
+# Sorting the input array to find out the second best and print out the second best
+sortedlist = sorted(A)
+print (sortedlist)
+print (sortedlist [n-2])

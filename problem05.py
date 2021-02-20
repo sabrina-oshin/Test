@@ -5,14 +5,20 @@
 
 # Taking the array input
 n = int (input())
-A = list ()
 
-# Appending the input values to the list 
-for i in range(n):
- x = input ()
- A.append(x)  
+# Appending the user input in the list sequentially
+A = list (map(int,input().strip().split())) [:n]
 
-# Sorting the input array to find out the second best and print out the second best
-sortedlist = sorted(A)
-print (sortedlist)
-print (sortedlist [n-2])
+# Code to find out the second highest number in a list
+mx =max(A[0],A[1]) 
+secondmax =min(A[0],A[1]) 
+for i in range(2,n): 
+    if A[i]>mx: 
+        secondmax=mx
+        mx=A[i] 
+    elif A[i]>secondmax and \
+        mx != A[i]: 
+        secondmax=A[i]
+
+# Print the second highest number in a list
+print(str(secondmax))
